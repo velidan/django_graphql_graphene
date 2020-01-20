@@ -15,7 +15,7 @@ class Ingredient(models.Model):
     # )
 
     category = models.ForeignKey(
-        Category, on_delete=models.CASCADE
+        Category, related_name='ingredients', on_delete=models.CASCADE
     )
 
     def __str__(self):

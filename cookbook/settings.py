@@ -27,6 +27,9 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+GRAPHENE = {
+    'SCHEMA': 'cookbook.schema.schema'
+}
 
 # Application definition
 
@@ -39,6 +42,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     'ingredients',
+
+    'graphene_django',
 ]
 
 MIDDLEWARE = [
